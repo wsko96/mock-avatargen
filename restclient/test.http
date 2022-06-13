@@ -1,0 +1,49 @@
+# Environment variables
+@baseUrl = http://localhost:5000
+@credentials = admin:admin
+
+###
+
+# Generate a classic Avatar 3D model from dongju.png.
+
+POST {{baseUrl}}/api/my_avatar/v1/generate
+Accept: */*
+Authorization: Basic {{credentials}}
+Content-Type: multipart/form-data; boundary=kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu
+Referer: {{baseUrl}}
+
+
+--kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu
+Content-Disposition: form-data; name="style";
+Content-Type: text/plain
+
+classic
+--kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu
+Content-Disposition: form-data; name="file"; filename="scarlett_johansson.png"
+Content-Type: image/png
+
+< ./scarlett_johansson.png
+--kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu--
+
+###
+
+# Generate a classic Avatar 3D model from shimhoon.png.
+
+POST {{baseUrl}}/api/my_avatar/v1/generate
+Accept: */*
+Authorization: Basic {{credentials}}
+Content-Type: multipart/form-data; boundary=kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu
+Referer: {{baseUrl}}
+
+
+--kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu
+Content-Disposition: form-data; name="style";
+Content-Type: text/plain
+
+classic
+--kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu
+Content-Disposition: form-data; name="file"; filename="roman_reigns.png"
+Content-Type: image/png
+
+< ./roman_reigns.png
+--kTmAb2lkjCtxbMVFzHEplAJjHCUo5aQndaUu--
