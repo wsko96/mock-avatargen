@@ -36,12 +36,12 @@ Werkzeug 2.1.2
 
 ## 서버 실행
 
-- `demo/mockavatar` 디렉토리로 이동하여 아래 명령 실행
+- 프로젝트 루트 디렉토리로 이동하여 아래 명령 실행
 ```
 > flask run
 ```
 
-- 위의 명령은 기본적으로 http://localhost:5000 에 서버를 시작함.
+- 위의 명령은 (`./app.py`를 실행함으로써) 기본적으로 http://localhost:5000 에 서버를 시작함.
 - 위 서버가 제공하는 REST API는 `/api/my_avatar/v1/generate` 하나로,
   `POST` 메소드로 이미지 파일 하나를 클라이언트가 전송하면,
   동일한 파일명의 `.glb` 파일을 `data/mpar/` 폴더에서 찾아서 다운로드 함.
